@@ -14,10 +14,10 @@ List<Wall> createBoundaries(Forge2DGame game) {
   final Vector2 bottomLeft = Vector2(topLeft.x, bottomRight.y);
 
   return [
-    Wall(topLeft, topRight),
-    Wall(topRight, bottomRight),
-    Wall(bottomRight, bottomLeft),
-    Wall(bottomLeft, topLeft),
+    Wall(topLeft * 0.8, topRight * 0.8),
+    Wall(topRight * 0.8, bottomRight * 0.8),
+    Wall(bottomRight * 0.8, bottomLeft * 0.8),
+    Wall(bottomLeft * 0.8, topLeft * 0.8),
   ];
 }
 
